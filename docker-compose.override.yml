@@ -1,0 +1,10 @@
+version: '3'
+services:
+  demongapp:
+    build:
+      context: .
+      dockerfile: .docker/dev.dockerfile
+    image: demongapp-dev
+    container_name: demongapp-dev
+    ports:
+      - 8080:80
